@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace easy2code_game
+namespace easy2code_game.MainCore
 {
     public static class Program
     {

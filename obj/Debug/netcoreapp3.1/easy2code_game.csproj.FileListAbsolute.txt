@@ -21,3 +21,4 @@ C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\obj\Debug\netcoreapp3.1\easy2
 C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\obj\Debug\netcoreapp3.1\easy2code_game.dll
 C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\obj\Debug\netcoreapp3.1\easy2code_game.pdb
 C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\obj\Debug\netcoreapp3.1\easy2code_game.genruntimeconfig.cache
+C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\target.xnb

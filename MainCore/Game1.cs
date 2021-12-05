@@ -1,42 +1,41 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using easy2code_game.Managers;
 
-namespace easy2code_game
+namespace easy2code_game.MainCore
 {
     public class Game1 : Game
     {
-        private GraphicsDeviceManager _graphics;
+        public static GraphicsDeviceManager graphics;
         private SpriteBatch _spriteBatch;
+        private GameStateManager gsm;
 
         public Game1()
         {
-            _graphics = new GraphicsDeviceManager(this);
+            graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
         }
 
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
-
+            graphics.PreferredBackBufferWidth = Data.ScreenWidth;
+            graphics.PreferredBackBufferHeight = Data.ScreenHeight;
+            graphics.ApplyChanges();
+            gsm = new GameStateManager();
             base.Initialize();
         }
 
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-
-            // TODO: use this.Content to load your game content here
+            gsm.LoadContent(Content);
         }
 
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
-
-            // TODO: Add your update logic here
-
+            gsm.Update(gameTime);
             base.Update(gameTime);
         }
 
@@ -44,8 +43,8 @@ namespace easy2code_game
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
-
+            _spriteBatch.Begin();
+            gsm.Draw(_spriteBatch);
             base.Draw(gameTime);
         }
     }
