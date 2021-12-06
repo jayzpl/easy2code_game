@@ -22,3 +22,10 @@ C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\obj\Debug\netcoreapp3.1\easy2
 C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\obj\Debug\netcoreapp3.1\easy2code_game.pdb
 C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\obj\Debug\netcoreapp3.1\easy2code_game.genruntimeconfig.cache
 C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\target.xnb
+C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\rect31.xnb
+C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\rect32.xnb
+C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\rect33.xnb
+C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\rect34.xnb
+C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\rect35.xnb
+C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\wczytaj.xnb
+C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\zapiszj.xnb

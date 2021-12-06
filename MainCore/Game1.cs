@@ -45,6 +45,7 @@ namespace easy2code_game.MainCore
 
             _spriteBatch.Begin();
             gsm.Draw(_spriteBatch);
+            _spriteBatch.End();
             base.Draw(gameTime);
         }
     }
