@@ -1,9 +1,2 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/rect31.png","c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/bin/DesktopGL/rect31.xnb","TextureProcessor","Texture2DContent",4195,109525,0,1117862
-"c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/rect32.png","c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/bin/DesktopGL/rect32.xnb","TextureProcessor","Texture2DContent",4664,109525,0,0041335
-"c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/rect33.png","c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/bin/DesktopGL/rect33.xnb","TextureProcessor","Texture2DContent",4801,109525,0,0059018
-"c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/rect34.png","c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/bin/DesktopGL/rect34.xnb","TextureProcessor","Texture2DContent",4458,109525,0,0041923
-"c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/rect35.png","c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/bin/DesktopGL/rect35.xnb","TextureProcessor","Texture2DContent",4633,109525,0,0053533
-"c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/target.png","c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/bin/DesktopGL/target.xnb","TextureProcessor","Texture2DContent",3395,32485,0,0020184
-"c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/wczytaj.png","c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/bin/DesktopGL/wczytaj.xnb","TextureProcessor","Texture2DContent",5049,109525,0,004127
-"c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/zapiszj.png","c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/bin/DesktopGL/zapiszj.xnb","TextureProcessor","Texture2DContent",4314,109525,0,004132
+"c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/wstecz.png","c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/bin/DesktopGL/wstecz.xnb","TextureProcessor","Texture2DContent",4775,109525,0,2348418

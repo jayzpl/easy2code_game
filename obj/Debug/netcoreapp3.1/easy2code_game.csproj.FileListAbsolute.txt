@@ -29,3 +29,4 @@ C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Conte
 C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\rect35.xnb
 C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\wczytaj.xnb
 C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\zapiszj.xnb
+C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\wstecz.xnb

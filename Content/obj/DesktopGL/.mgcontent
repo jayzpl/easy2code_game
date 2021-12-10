@@ -11,9 +11,11 @@
     <File>c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/rect35.png</File>
     <File>c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/target.png</File>
     <File>c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/wczytaj.png</File>
+    <File>c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/wstecz.png</File>
     <File>c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/zapiszj.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
