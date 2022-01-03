@@ -5,3 +5,4 @@
 # 0.0.2 implementation of game mode classes structure.
 # 0.0.3 adding game level buttons in menu.
 # 0.0.4 adding scenes of diffrent levels and 'back' button to every level, remodeling abstract game design class.
+# 0.0.5 implementation of moving objects and colision object with walls.
