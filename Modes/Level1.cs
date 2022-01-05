@@ -9,6 +9,19 @@ using Microsoft.Xna.Framework.Input;
 
 namespace easy2code_game.Modes
 {
+    public enum BlockType{ZMIENNA, PETLA, WARUNEK}
+    public class Block
+    {
+          public Rectangle blockRect;
+          public BlockType type;
+
+          Block(Rectangle rect, BlockType btype)
+          {
+              this.blockRect = rect;
+              this.type = btype;
+          }
+    }
+
     public class Level1 : AbstractGameDesign
     {
         private const int BUTTONS_NUMBER = 16;
@@ -17,12 +30,17 @@ namespace easy2code_game.Modes
         private Texture2D[] blocks = new Texture2D[BLOCKS_NUMBER];
         private Rectangle[] buttonsRect = new Rectangle[BUTTONS_NUMBER];
         private Rectangle[] blocksRect = new Rectangle[BLOCKS_NUMBER];
+
+        private List<Block> workingBlocks = new List<Block>();
         
         private MouseState ms_current, ms_old;
         private Rectangle ms_rect;
 
-        private Texture2D answer, output, poczatek;
-        private Rectangle answerRect, outputRect, poczatekRect;
+        private Texture2D answer, output, poczatek, upwall, vertwall;
+        private Rectangle answerRect, outputRect, poczatekRect, upwallRect, vertwallRect;
+
+        private Rectangle working_zone;
+
 
         public override void LoadContent(ContentManager Content)
         {
@@ -53,6 +71,13 @@ namespace easy2code_game.Modes
             outputRect = new Rectangle(600, 640, output.Width, output.Height-10);
             poczatek = Content.Load<Texture2D>("poczatek");
             poczatekRect = new Rectangle(440, 5, poczatek.Width-30, poczatek.Height-30);
+            upwall = Content.Load<Texture2D>("upwall1");
+            upwallRect = new Rectangle(10, 600, upwall.Width-920, upwall.Height-5);
+            vertwall = Content.Load<Texture2D>("verticalwall");
+            vertwallRect = new Rectangle(160, 5, vertwall.Width, vertwall.Height+470);
+
+            //working zone
+            working_zone = new Rectangle(160, 5, upwall.Width-920, vertwall.Height+470);
             
         }
     
@@ -73,9 +98,22 @@ namespace easy2code_game.Modes
             for (int i=0; i < blocks.Length; i++)
             {
                 moveObject(i);
+                checkBlockInWorkingZone(i);
             }
             
             
+        }
+
+        public void checkBlockInWorkingZone(int i)
+        {
+            if (working_zone.Contains(blocksRect[i]))
+            {
+                workingBlocks.Add(new Block(blocksRect[i], BlockType.ZMIENNA));
+            }
+            else
+            {
+
+            }
         }
 
         public void moveObject(int i)
@@ -99,6 +137,8 @@ namespace easy2code_game.Modes
             spriteBatch.Draw(answer, answerRect, Color.White);
             spriteBatch.Draw(output, outputRect, Color.White);
             spriteBatch.Draw(poczatek, poczatekRect, Color.White);
+            spriteBatch.Draw(upwall, upwallRect, Color.White);
+            spriteBatch.Draw(vertwall, vertwallRect, Color.White);
         }
 
         private bool check_colision_left(Rectangle objectRect)

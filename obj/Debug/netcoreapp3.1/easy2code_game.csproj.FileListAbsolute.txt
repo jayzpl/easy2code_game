@@ -85,3 +85,6 @@ C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Conte
 C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\podpowiedz.xnb
 C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\start.xnb
 C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\wynik.xnb
+C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\upwall.xnb
+C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\upwall1.xnb
+C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\verticalwall.xnb

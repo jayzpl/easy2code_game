@@ -26,6 +26,9 @@
     <File>C:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/target.png</File>
     <File>C:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/tekst_info1.png</File>
     <File>C:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/tekst_info2.png</File>
+    <File>C:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/upwall.png</File>
+    <File>C:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/upwall1.png</File>
+    <File>C:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/verticalwall.png</File>
     <File>C:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/warunek.png</File>
     <File>C:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/warunek2.png</File>
     <File>C:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/wczytaj.png</File>
@@ -37,6 +40,9 @@
     <File>C:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/zmienna2.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
