@@ -41,7 +41,7 @@ namespace easy2code_game.MainCore
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Black);
 
             _spriteBatch.Begin();
             gsm.Draw(_spriteBatch);

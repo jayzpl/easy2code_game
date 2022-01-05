@@ -9,19 +9,26 @@ using Microsoft.Xna.Framework.Input;
 
 namespace easy2code_game.Modes
 {
-    public class Level5 : AbstractGameDesign
+    public class Info : AbstractGameDesign
     {
-        private const int BUTTONS_NUMBER = 1;
-        private Texture2D[] buttons = new Texture2D[BUTTONS_NUMBER];
-        private Rectangle[] buttonsRect = new Rectangle[BUTTONS_NUMBER];
         
         private MouseState ms_current, ms_old;
         private Rectangle ms_rect;
+        private Texture2D back, textInfo, textInfo2;
+        private Rectangle backRect, textInfoRect, textInfoRect2;
+
         public override void LoadContent(ContentManager Content)
         {
-            const int INCREMENT_VALUE = 125;
-            buttons[0] = Content.Load<Texture2D>($"wstecz");
-            buttonsRect[0] = new Rectangle(10, 500 + (INCREMENT_VALUE*0), buttons[0].Width, buttons[0].Height);
+            try
+            {
+            back = Content.Load<Texture2D>($"wstecz1");
+            backRect = new Rectangle(5, 700, back.Width, back.Height);
+            textInfo = Content.Load<Texture2D>($"tekst_info1");
+            textInfoRect = new Rectangle(5, 5, 1000, 150);
+            textInfo2 = Content.Load<Texture2D>($"tekst_info2");
+            textInfoRect2 = new Rectangle(5, 250, 900, 110);
+            }
+            catch (Exception){}
         }
     
         public override void Update(GameTime gameTime)
@@ -30,12 +37,13 @@ namespace easy2code_game.Modes
             ms_current = Mouse.GetState();
             ms_rect = new Rectangle(ms_current.X, ms_current.Y, 1, 1);
 
-            if(ms_current.LeftButton == ButtonState.Pressed && ms_rect.Intersects(buttonsRect[0])) //Menu
+            if(ms_current.LeftButton == ButtonState.Pressed && ms_rect.Intersects(backRect)) //Menu
                 Data.CurrentState = Data.Modes.Menu;
         }
 
         public override void Draw(SpriteBatch spriteBatch)
         {
+            /*
             for (int i=0; i<buttons.Length; i++)
             {
                 spriteBatch.Draw(buttons[i], buttonsRect[i], Color.White);
@@ -46,6 +54,16 @@ namespace easy2code_game.Modes
                     spriteBatch.Draw(buttons[i], buttonsRect[i], Color.Gray);
                 }
             }
+            */
+            
+            spriteBatch.Draw(back, backRect, Color.White);
+            spriteBatch.Draw(textInfo, textInfoRect, Color.White);
+            spriteBatch.Draw(textInfo2, textInfoRect2, Color.White);
+            if(ms_rect.Intersects(backRect))
+            {
+                    spriteBatch.Draw(back, backRect, Color.Gray);
+            }
+            
         }
     }
 }

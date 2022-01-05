@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/zapiszj.png</SourceFile>
-  <SourceTime>2021-12-06T13:33:18.9490024+01:00</SourceTime>
+  <SourceTime>2022-01-04T21:29:14.731973+01:00</SourceTime>
   <DestFile>c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/bin/DesktopGL/zapiszj.xnb</DestFile>
-  <DestTime>2021-12-06T13:37:21.14516+01:00</DestTime>
+  <DestTime>2022-01-05T14:41:35.2540342+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -11,7 +11,7 @@ namespace easy2code_game.MainCore
 
         public static bool Exit {get; set;} = false;
 
-        public enum Modes {Menu, Lvl1, Lvl2, Lvl3, Lvl4, Lvl5}
+        public enum Modes {Menu, Lvl1, Lvl2, Lvl3, Lvl4, Info, Podpowiedz1}
         public static Modes CurrentState {get; set;} = Modes.Menu;
     }
 }

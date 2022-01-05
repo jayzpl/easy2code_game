@@ -20,7 +20,7 @@ namespace easy2code_game.Modes
         public override void LoadContent(ContentManager Content)
         {
             const int INCREMENT_VALUE = 125;
-            buttons[0] = Content.Load<Texture2D>($"wstecz");
+            buttons[0] = Content.Load<Texture2D>($"wstecz1");
             buttonsRect[0] = new Rectangle(10, 500 + (INCREMENT_VALUE*0), buttons[0].Width, buttons[0].Height);
         }
     
