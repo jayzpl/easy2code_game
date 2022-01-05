@@ -8,10 +8,11 @@ namespace easy2code_game.MainCore
     {
         public static int ScreenWidth { get; set;} = 1024;
         public static int ScreenHeight { get; set;} = 768;
-
         public static bool Exit {get; set;} = false;
 
         public enum Modes {Menu, Lvl1, Lvl2, Lvl3, Lvl4, Info, Podpowiedz1}
         public static Modes CurrentState {get; set;} = Modes.Menu;
+
+        public enum BlockType{ZMIENNA, PETLA, WARUNEK, BUTTON, ELEMENT}
     }
 }

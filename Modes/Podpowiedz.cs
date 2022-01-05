@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace easy2code_game.Modes
 {
-    public class Podpowiedz1 : AbstractGameDesign
+    public class Podpowiedz : AbstractGameDesign
     {
         
         private MouseState ms_current, ms_old;
@@ -23,12 +23,10 @@ namespace easy2code_game.Modes
             {
             back = Content.Load<Texture2D>($"wstecz1");
             backRect = new Rectangle(5, 700, back.Width, back.Height);
-            /*
             textInfo = Content.Load<Texture2D>($"tekst_info1");
             textInfoRect = new Rectangle(5, 5, 1000, 150);
             textInfo2 = Content.Load<Texture2D>($"tekst_info2");
             textInfoRect2 = new Rectangle(5, 250, 900, 110);
-            */
             }
             catch (Exception){}
         }
@@ -59,8 +57,8 @@ namespace easy2code_game.Modes
             */
             
             spriteBatch.Draw(back, backRect, Color.White);
-            //spriteBatch.Draw(textInfo, textInfoRect, Color.White);
-            //spriteBatch.Draw(textInfo2, textInfoRect2, Color.White);
+            spriteBatch.Draw(textInfo, textInfoRect, Color.White);
+            spriteBatch.Draw(textInfo2, textInfoRect2, Color.White);
             if(ms_rect.Intersects(backRect))
             {
                     spriteBatch.Draw(back, backRect, Color.Gray);

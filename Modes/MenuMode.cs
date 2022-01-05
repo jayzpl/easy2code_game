@@ -68,7 +68,6 @@ namespace easy2code_game.Modes
             for (int i=0; i<buttons.Length; i++)
             {
                 spriteBatch.Draw(buttons[i], buttonsRect[i], Color.White);
-
                 //hoverover the button
                 if(ms_rect.Intersects(buttonsRect[i]))
                 {
@@ -78,9 +77,9 @@ namespace easy2code_game.Modes
             spriteBatch.Draw(logo, logoRect, Color.White);
             spriteBatch.Draw(help, helpRect, Color.White);
             if(ms_rect.Intersects(helpRect))
-                {
-                    spriteBatch.Draw(help, helpRect, Color.Gray);
-                }
+            {
+                spriteBatch.Draw(help, helpRect, Color.Gray);
+            }
         }
     }
 }

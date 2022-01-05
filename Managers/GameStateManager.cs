@@ -17,7 +17,7 @@ namespace easy2code_game.Managers
         private Level3 lvl3 = new Level3();
         private Level4 lvl4 = new Level4();
         private Info info = new Info();
-        private Podpowiedz1 podpowiedz1 = new Podpowiedz1();
+        private Podpowiedz podpowiedz = new Podpowiedz();
         public override void LoadContent(ContentManager Content)
         {
             menuMode.LoadContent(Content);
@@ -26,7 +26,7 @@ namespace easy2code_game.Managers
             lvl3.LoadContent(Content);
             lvl4.LoadContent(Content);
             info.LoadContent(Content);
-            podpowiedz1.LoadContent(Content);
+            podpowiedz.LoadContent(Content);
         }
     
         public override void Update(GameTime gameTime)
@@ -52,7 +52,7 @@ namespace easy2code_game.Managers
                     info.Update(gameTime);
                     break;
                 case Data.Modes.Podpowiedz1:
-                    podpowiedz1.Update(gameTime);
+                    podpowiedz.Update(gameTime);
                     break;
             }
         }
@@ -80,7 +80,7 @@ namespace easy2code_game.Managers
                     info.Draw(spriteBatch);
                     break;
                 case Data.Modes.Podpowiedz1:
-                    podpowiedz1.Draw(spriteBatch);
+                    podpowiedz.Draw(spriteBatch);
                     break;
             }
         }
