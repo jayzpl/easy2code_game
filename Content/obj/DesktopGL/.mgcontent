@@ -5,6 +5,7 @@
   <Config />
   <SourceFiles>
     <File>c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/0212a58b8024e79a7d7dc0f7c8b32bdf.png</File>
+    <File>c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/arial.spritefont</File>
     <File>c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/info.png</File>
     <File>c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/level1.png</File>
     <File>c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/level2.png</File>
@@ -40,6 +41,7 @@
     <File>c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/zmienna2.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

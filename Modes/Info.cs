@@ -17,6 +17,14 @@ namespace easy2code_game.Modes
         private Texture2D back, textInfo, textInfo2;
         private Rectangle backRect, textInfoRect, textInfoRect2;
 
+        private SpriteFont font;
+        private Vector2 textMiddle;
+        private Vector2 position;
+        string text = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+
+        
+        
+
         public override void LoadContent(ContentManager Content)
         {
             try
@@ -27,6 +35,11 @@ namespace easy2code_game.Modes
             textInfoRect = new Rectangle(5, 5, 1000, 150);
             textInfo2 = Content.Load<Texture2D>($"tekst_info2");
             textInfoRect2 = new Rectangle(5, 250, 900, 110);
+
+            font = Content.Load<SpriteFont>("arial");
+            textMiddle = font.MeasureString(text)/2;
+            position = new Vector2(100, 600);
+            
             }
             catch (Exception){}
         }
@@ -63,7 +76,9 @@ namespace easy2code_game.Modes
             {
                     spriteBatch.Draw(back, backRect, Color.Gray);
             }
-            
+
+            //spriteBatch.DrawString(font, "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", position, Color.White, 0, textMiddle, 1.0f, SpriteEffects.None, 0.5f);
+            spriteBatch.DrawString(font, text, position, Color.White);
         }
     }
 }

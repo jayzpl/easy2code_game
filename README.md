@@ -9,3 +9,14 @@
 
 # 0.1.0 implementation of better gui, added new  menu and level buttons.
 # 0.1.1 implementation of better level design, added new mechanic for moving blocks.
+
+
+TODO:
+- implementation of counting blocks mechanic (required)
+- implementation of inserting data to blocks
+- implementation of counting and geting points (required)
+- implementation of restart level 
+- add level 3 and 4 (required)
+
+INPROGRES:
+- rebuilding if info and hints design

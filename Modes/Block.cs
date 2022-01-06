@@ -16,6 +16,7 @@ namespace easy2code_game.Modes
         public Data.BlockType type;
 
         public bool isWorkingZone = false;
+
         public Block(Texture2D btexture, Data.BlockType btype)
         {
              this.texture = btexture;
@@ -35,6 +36,7 @@ namespace easy2code_game.Modes
                check_colision_up(this.rect, ms_rect) &&
                check_colision_down(this.rect, ms_rect))
             {
+
                 this.rect.X = ms_current.X-(this.rect.Width/2);
                 this.rect.Y = ms_current.Y-(this.rect.Height/2);
             }
