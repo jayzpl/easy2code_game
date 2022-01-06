@@ -21,6 +21,7 @@ namespace easy2code_game.Modes
         private Rectangle ms_rect, working_zone;
         public override void LoadContent(ContentManager Content)
         {
+            Data.OldState = Data.Modes.Lvl2;
             //loading buttons
             hint_button = new Block(Content.Load<Texture2D>($"podpowiedz"), Data.BlockType.BUTTON);
             hint_button.setRectangle(new Rectangle(5, 630, hint_button.texture.Width, hint_button.texture.Height));
@@ -81,7 +82,7 @@ namespace easy2code_game.Modes
             
             //checking if hint button has been clicked
             if(ms_current.LeftButton == ButtonState.Pressed && ms_rect.Intersects(hint_button.rect) && ms_old.LeftButton == ButtonState.Released) //Hint
-                Data.CurrentState = Data.Modes.Podpowiedz1;
+                Data.CurrentState = Data.Modes.Info;
 
             //moving blocks mechanic
             checkMovingBlocks(blocks);

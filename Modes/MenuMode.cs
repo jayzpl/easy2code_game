@@ -36,6 +36,10 @@ namespace easy2code_game.Modes
             help = Content.Load<Texture2D>("info");
             helpRect = new Rectangle(455,680,help.Width, help.Height);
 
+            Data.OldState = Data.Modes.Menu;
+            Data.displayText1 = Data.infoText1;
+            Data.displayText2 = Data.infoText2;
+
         }
     
         public override void Update(GameTime gameTime)
@@ -57,7 +61,7 @@ namespace easy2code_game.Modes
             if(ms_current.LeftButton == ButtonState.Pressed && ms_rect.Intersects(buttonsRect[3]) && ms_old.LeftButton == ButtonState.Released) //Level4
                 Data.CurrentState = Data.Modes.Lvl4;
 
-            if(ms_current.LeftButton == ButtonState.Pressed && ms_rect.Intersects(helpRect) && ms_old.LeftButton == ButtonState.Released) //Info
+            if(ms_current.LeftButton == ButtonState.Pressed && ms_rect.Intersects(helpRect) && ms_old.LeftButton == ButtonState.Released) //Info 
                 Data.CurrentState = Data.Modes.Info;
                 
         }
