@@ -19,6 +19,8 @@ namespace easy2code_game.Modes
         
         private MouseState ms_current, ms_old;
         private Rectangle ms_rect, working_zone;
+
+        private string answer = "111";
         public override void LoadContent(ContentManager Content)
         {
             Data.OldState = Data.Modes.Lvl1;
@@ -91,6 +93,23 @@ namespace easy2code_game.Modes
                 Data.displayText1 = Data.lvl1Text1;
                 Data.displayText2 = Data.lvl1Text2;
                 Data.CurrentState = Data.Modes.Info;
+            }
+
+            //compile algorithm
+            if(ms_current.LeftButton == ButtonState.Pressed && ms_rect.Intersects(start_button.rect) && ms_old.LeftButton == ButtonState.Released){
+                CheckResult result = new CheckResult(this.answer);
+                result.checkOrderOfBlocks(working_zone, blocks);
+                if (result.isAnswerGood())
+                {
+                    result.countPoints();
+                    //display points here
+                }
+                else
+                {
+                    //display 'wrong' message
+                }
+
+            
             }
 
             //moving blocks mechanic
