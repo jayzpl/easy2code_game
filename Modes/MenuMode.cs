@@ -36,9 +36,7 @@ namespace easy2code_game.Modes
             help = Content.Load<Texture2D>("info");
             helpRect = new Rectangle(455,680,help.Width, help.Height);
 
-            Data.OldState = Data.Modes.Menu;
-            Data.displayText1 = Data.infoText1;
-            Data.displayText2 = Data.infoText2;
+            
 
         }
     
@@ -49,21 +47,32 @@ namespace easy2code_game.Modes
             ms_rect = new Rectangle(ms_current.X, ms_current.Y, 1, 1);
 
             //selecting the lavel by clicking a button
-            if(ms_current.LeftButton == ButtonState.Pressed && ms_rect.Intersects(buttonsRect[0]) && ms_old.LeftButton == ButtonState.Released) //Level1
+            if(ms_current.LeftButton == ButtonState.Pressed && ms_rect.Intersects(buttonsRect[0]) && ms_old.LeftButton == ButtonState.Released){ //Level1
+                Data.OldState = Data.Modes.Lvl1;
                 Data.CurrentState = Data.Modes.Lvl1;
+            }
 
-            if(ms_current.LeftButton == ButtonState.Pressed && ms_rect.Intersects(buttonsRect[1]) && ms_old.LeftButton == ButtonState.Released) //Level2
+            if(ms_current.LeftButton == ButtonState.Pressed && ms_rect.Intersects(buttonsRect[1]) && ms_old.LeftButton == ButtonState.Released){ //Level2
+                Data.OldState = Data.Modes.Lvl2;
                 Data.CurrentState = Data.Modes.Lvl2;
+            }
 
-            if(ms_current.LeftButton == ButtonState.Pressed && ms_rect.Intersects(buttonsRect[2]) && ms_old.LeftButton == ButtonState.Released) //Level3
+            if(ms_current.LeftButton == ButtonState.Pressed && ms_rect.Intersects(buttonsRect[2]) && ms_old.LeftButton == ButtonState.Released){ //Level3
+                Data.OldState = Data.Modes.Lvl3;
                 Data.CurrentState = Data.Modes.Lvl3;
+            }
 
-            if(ms_current.LeftButton == ButtonState.Pressed && ms_rect.Intersects(buttonsRect[3]) && ms_old.LeftButton == ButtonState.Released) //Level4
+            if(ms_current.LeftButton == ButtonState.Pressed && ms_rect.Intersects(buttonsRect[3]) && ms_old.LeftButton == ButtonState.Released){ //Level4
+                Data.OldState = Data.Modes.Lvl4;
                 Data.CurrentState = Data.Modes.Lvl4;
+            }
 
-            if(ms_current.LeftButton == ButtonState.Pressed && ms_rect.Intersects(helpRect) && ms_old.LeftButton == ButtonState.Released) //Info 
+            if(ms_current.LeftButton == ButtonState.Pressed && ms_rect.Intersects(helpRect) && ms_old.LeftButton == ButtonState.Released){ //Info 
+                Data.OldState = Data.Modes.Menu;
+                Data.displayText1 = Data.infoText1;
+                Data.displayText2 = Data.infoText2;
                 Data.CurrentState = Data.Modes.Info;
-                
+            }                
         }
 
         public override void Draw(SpriteBatch spriteBatch)

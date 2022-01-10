@@ -87,8 +87,11 @@ namespace easy2code_game.Modes
                 Data.CurrentState = Data.Modes.Menu;
             
             //checking if hint button has been clicked
-            if(ms_current.LeftButton == ButtonState.Pressed && ms_rect.Intersects(hint_button.rect) && ms_old.LeftButton == ButtonState.Released) //Hint
+            if(ms_current.LeftButton == ButtonState.Pressed && ms_rect.Intersects(hint_button.rect) && ms_old.LeftButton == ButtonState.Released){ //Hint
+                Data.displayText1 = Data.lvl1Text1;
+                Data.displayText2 = Data.lvl1Text2;
                 Data.CurrentState = Data.Modes.Info;
+            }
 
             //moving blocks mechanic
             checkMovingBlocks(blocks);

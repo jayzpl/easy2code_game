@@ -18,10 +18,6 @@ namespace easy2code_game.Modes
 
         private SpriteFont font;
         private Vector2 position1, position2, textMiddle1, textMiddle2;
-        string text1 = Data.displayText1;
-        string text2 = Data.displayText2;
-
-        
         
 
         public override void LoadContent(ContentManager Content)
@@ -30,15 +26,22 @@ namespace easy2code_game.Modes
             {
             back = Content.Load<Texture2D>($"wstecz1");
             backRect = new Rectangle(5, 700, back.Width, back.Height);
-            //textInfo = Content.Load<Texture2D>($"tekst_info1");
-            //textInfoRect = new Rectangle(5, 5, 1000, 150);
-            //textInfo2 = Content.Load<Texture2D>($"tekst_info2");
-            //textInfoRect2 = new Rectangle(5, 250, 900, 110);
             font = Content.Load<SpriteFont>("arial");
-            textMiddle1 = font.MeasureString(text1)/2;
-            textMiddle2 = font.MeasureString(text2)/2;
+            textMiddle1 = font.MeasureString(Data.displayText1)/2;
+            textMiddle2 = font.MeasureString(Data.displayText2)/2;
             position1 = new Vector2(5, 5);
-            position2 = new Vector2(5, 350); 
+            position2 = new Vector2(5, 350);
+
+            if (Data.CurrentState == Data.Modes.Info)
+            {
+                Data.displayText1 = Data.infoText1;
+                Data.displayText2 = Data.infoText2;
+            }
+            if (Data.CurrentState == Data.Modes.Podpowiedz1)
+            {
+                Data.displayText1 = Data.lvl1Text1;
+                Data.displayText2 = Data.lvl1Text2;
+            } 
             }
             catch (Exception){}
         }
@@ -67,8 +70,8 @@ namespace easy2code_game.Modes
             {
                 spriteBatch.Draw(back, backRect, Color.Gray);
             }
-            spriteBatch.DrawString(font, text1, position1, Color.White);
-            spriteBatch.DrawString(font, text2, position2, Color.White);
+            spriteBatch.DrawString(font, Data.displayText1, position1, Color.White);
+            spriteBatch.DrawString(font, Data.displayText2, position2, Color.White);
         }
     }
 }
