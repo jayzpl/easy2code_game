@@ -11,11 +11,10 @@
 - 0.1.0 implementation of better gui, added new  menu and level buttons.
 - 0.1.1 implementation of better level design, added new mechanic for moving blocks.
 - 0.1.2 implementation of new "info and hints" mechanic. Added main game mechanic: ordering blocks and checking result
+- 0.1.3 added displaing points and 'win/fail' message
 
 
 # TODO:
-- add displaing points and 'win/fail' message (required)
-- add level 3 and 4 (required)
 - add instruction in readme how to run game (required)
 - implementation of inserting data to blocks
 - implementation of level restart 
@@ -23,6 +22,6 @@
 
 
 # INPROGRES:
-- new textures in other levels
+- add level 3 and 4 (required)
 
 # TOTAL PROGRES: 90%

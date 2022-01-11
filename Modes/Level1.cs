@@ -22,8 +22,9 @@ namespace easy2code_game.Modes
 
         private SpriteFont font;
         private string answer = ""; //this should allways be empty
-        private string task = "111";
-        Vector2 position_answer, position_task, middle_answer, middle_task; 
+        private string points = ""; //this should allways be empty
+        private string task = "111"; //here is the task result of this level 
+        Vector2 position_answer, position_task, middle_answer, middle_task, position_points, middle_points; 
 
         public override void LoadContent(ContentManager Content)
         {
@@ -64,7 +65,10 @@ namespace easy2code_game.Modes
             font = Content.Load<SpriteFont>("arial");
             middle_answer = font.MeasureString(this.answer)/2;
             middle_task = font.MeasureString(this.task)/2;
+            middle_points = font.MeasureString(this.points)/2;
             position_answer = new Vector2(770, 647);
+            position_points = new Vector2(430, 690);
+            position_task = new Vector2(905, 701);
             
 
             //loading blocks
@@ -113,11 +117,13 @@ namespace easy2code_game.Modes
                 if (result.isAnswerGood())
                 {
                     result.countPoints();
-                    this.answer = $"{result.points} pkt.";
+                    this.points = $"{result.points} pkt.";
+                    this.answer = result.temp_answer;
                 }
                 else
                 {
-                    this.answer = $"{result.points} pkt.";
+                    this.points = $"{result.points} pkt.";
+                    this.answer = result.temp_answer;
                 }
 
             
@@ -149,6 +155,8 @@ namespace easy2code_game.Modes
                 drawObjFromList(elements, spriteBatch);
                 drawObjFromList(blocks, spriteBatch);
                 spriteBatch.DrawString(font, this.answer, position_answer, Color.White);
+                spriteBatch.DrawString(font, this.points, position_points, Color.White);
+                spriteBatch.DrawString(font, this.task, position_task, Color.White);
             }
             catch (Exception)
             {

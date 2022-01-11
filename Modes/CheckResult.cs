@@ -17,6 +17,8 @@ namespace easy2code_game.Modes
         string answer;
         public int points = 0;
 
+        public string temp_answer = "";
+
         public CheckResult(string answer)
         {
             this.answer = answer;
@@ -33,7 +35,6 @@ namespace easy2code_game.Modes
 
         public bool isAnswerGood()
         {   
-            string temp_answer = "";
             Data.BlockType previus_block = Data.BlockType.BUTTON;
             foreach (Block block in this.result)
             {
@@ -61,22 +62,11 @@ namespace easy2code_game.Modes
 
         public void countPoints()
         {
-            /*
-            try{
-                this.points = this.result[0].test();
-            }
-            catch(Exception e)
-            {
-                this.points = "nic";
-            }
-            */
             if (this.result.Count == 0) {this.points = 0;}
             if (this.result.Count > 0 && this.result.Count < 3) {this.points = 10;}
             if (this.result.Count >= 3 && this.result.Count < 4) {this.points = 5;}
             if (this.result.Count >= 4 && this.result.Count < 10) {this.points = 2;}
             if (this.result.Count >= 10) {this.points = 0;}
-            
-            //this.points = this.result.Count;
         }
     }
 }
