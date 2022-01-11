@@ -20,7 +20,11 @@ namespace easy2code_game.Modes
         private MouseState ms_current, ms_old;
         private Rectangle ms_rect, working_zone;
 
-        private string answer = "111";
+        private SpriteFont font;
+        private string answer = ""; //this should allways be empty
+        private string task = "111";
+        Vector2 position_answer, position_task, middle_answer, middle_task; 
+
         public override void LoadContent(ContentManager Content)
         {
             Data.OldState = Data.Modes.Lvl1;
@@ -40,11 +44,11 @@ namespace easy2code_game.Modes
             buttons.Add(hint_button);
 
             //loading static elements
-            static_element = new Block(Content.Load<Texture2D>("odpowiedz1"), Data.BlockType.ELEMENT);
-            static_element.setRectangle(new Rectangle(600, 700, static_element.texture.Width-100, static_element.texture.Height-10));
+            static_element = new Block(Content.Load<Texture2D>("zadany_wynik"), Data.BlockType.ELEMENT);
+            static_element.setRectangle(new Rectangle(600, 700, static_element.texture.Width-25, static_element.texture.Height-3));
             elements.Add(static_element);
             static_element = new Block(Content.Load<Texture2D>("wynik"), Data.BlockType.ELEMENT);
-            static_element.setRectangle(new Rectangle(600, 640, static_element.texture.Width, static_element.texture.Height-10));
+            static_element.setRectangle(new Rectangle(590, 640, static_element.texture.Width, static_element.texture.Height-10));
             elements.Add(static_element);
             static_element = new Block(Content.Load<Texture2D>("poczatek"), Data.BlockType.ELEMENT);
             static_element.setRectangle(new Rectangle(440, 5, static_element.texture.Width-30, static_element.texture.Height-30));
@@ -56,6 +60,13 @@ namespace easy2code_game.Modes
             static_element.setRectangle(new Rectangle(160, 5, static_element.texture.Width, static_element.texture.Height+470));
             elements.Add(static_element);
 
+            //loading dynamic text fields
+            font = Content.Load<SpriteFont>("arial");
+            middle_answer = font.MeasureString(this.answer)/2;
+            middle_task = font.MeasureString(this.task)/2;
+            position_answer = new Vector2(770, 647);
+            
+
             //loading blocks
             var_block1 = new Block(Content.Load<Texture2D>($"zmienna2"), Data.BlockType.ZMIENNA);
             var_block1.setRectangle(new Rectangle(3, 30, var_block1.texture.Width, var_block1.texture.Height));
@@ -63,9 +74,9 @@ namespace easy2code_game.Modes
             var_block2.setRectangle(new Rectangle(3, 130, var_block2.texture.Width, var_block2.texture.Height));
             var_block3 = new Block(Content.Load<Texture2D>($"zmienna2"), Data.BlockType.ZMIENNA);
             var_block3.setRectangle(new Rectangle(3, 230, var_block3.texture.Width, var_block3.texture.Height));
-            loop_block = new Block(Content.Load<Texture2D>($"petla2"), Data.BlockType.ZMIENNA);
+            loop_block = new Block(Content.Load<Texture2D>($"petla2"), Data.BlockType.PETLA);
             loop_block.setRectangle(new Rectangle(3, 330, loop_block.texture.Width, loop_block.texture.Height));
-            if_block = new Block(Content.Load<Texture2D>($"warunek2"), Data.BlockType.ZMIENNA);
+            if_block = new Block(Content.Load<Texture2D>($"warunek2"), Data.BlockType.WARUNEK);
             if_block.setRectangle(new Rectangle(3, 430, if_block.texture.Width, if_block.texture.Height));
 
             blocks.Add(var_block1);
@@ -97,16 +108,16 @@ namespace easy2code_game.Modes
 
             //compile algorithm
             if(ms_current.LeftButton == ButtonState.Pressed && ms_rect.Intersects(start_button.rect) && ms_old.LeftButton == ButtonState.Released){
-                CheckResult result = new CheckResult(this.answer);
+                CheckResult result = new CheckResult(this.task);
                 result.checkOrderOfBlocks(working_zone, blocks);
                 if (result.isAnswerGood())
                 {
                     result.countPoints();
-                    //display points here
+                    this.answer = $"{result.points} pkt.";
                 }
                 else
                 {
-                    //display 'wrong' message
+                    this.answer = $"{result.points} pkt.";
                 }
 
             
@@ -137,6 +148,7 @@ namespace easy2code_game.Modes
                 drawObjFromList(buttons, spriteBatch);
                 drawObjFromList(elements, spriteBatch);
                 drawObjFromList(blocks, spriteBatch);
+                spriteBatch.DrawString(font, this.answer, position_answer, Color.White);
             }
             catch (Exception)
             {

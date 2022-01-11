@@ -26,6 +26,13 @@ namespace easy2code_game.Modes
         {
             this.rect = brect;
         }
+        public string test()
+        {
+            if (this.type == Data.BlockType.ZMIENNA){return "zmienna";}
+            if (this.type == Data.BlockType.PETLA){return "petla";}
+            if (this.type == Data.BlockType.WARUNEK){return "warunek";}
+            else {return "nic";}
+        }
 
         public void moveObject(MouseState ms_current, Rectangle ms_rect)
         {

@@ -36,11 +36,13 @@
     <File>C:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/wstecz.png</File>
     <File>C:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/wstecz1.png</File>
     <File>C:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/wynik.png</File>
+    <File>C:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/zadany_wynik.png</File>
     <File>C:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/zapiszj.png</File>
     <File>C:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/zmienna.png</File>
     <File>C:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/zmienna2.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

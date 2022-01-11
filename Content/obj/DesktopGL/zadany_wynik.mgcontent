@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/logo2.png</SourceFile>
-  <SourceTime>2022-01-05T12:16:05.499886+01:00</SourceTime>
-  <DestFile>c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/bin/DesktopGL/logo2.xnb</DestFile>
-  <DestTime>2022-01-11T18:31:51.2386918+01:00</DestTime>
+  <SourceFile>c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/zadany_wynik.png</SourceFile>
+  <SourceTime>2022-01-11T18:31:08.7840121+01:00</SourceTime>
+  <DestFile>c:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/bin/DesktopGL/zadany_wynik.xnb</DestFile>
+  <DestTime>2022-01-11T18:31:51.5377433+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

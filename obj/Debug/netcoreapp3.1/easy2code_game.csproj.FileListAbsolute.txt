@@ -89,3 +89,4 @@ C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Conte
 C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\upwall1.xnb
 C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\verticalwall.xnb
 C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\arial.xnb
+C:\Users\Kubus\Desktop\JPWP_projekt\easy2code_game\bin\Debug\netcoreapp3.1\Content\zadany_wynik.xnb
