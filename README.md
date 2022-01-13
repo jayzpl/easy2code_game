@@ -12,16 +12,16 @@
 - 0.1.1 implementation of better level design, added new mechanic for moving blocks.
 - 0.1.2 implementation of new "info and hints" mechanic. Added main game mechanic: ordering blocks and checking result
 - 0.1.3 added displaing points and 'win/fail' message
+- 0.1.4 added new game levels
 
 
 # TODO:
-- add instruction in readme how to run game (required)
 - implementation of inserting data to blocks
 - implementation of level restart 
 - add new 'if' block mechanic
 
 
 # INPROGRES:
-- add level 3 and 4 (required)
+- add instruction in readme how to run game (required)
 
-# TOTAL PROGRES: 95%
+# TOTAL PROGRES: 99%

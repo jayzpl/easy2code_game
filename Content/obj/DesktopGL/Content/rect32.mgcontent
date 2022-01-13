@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/rect32.png</SourceFile>
-  <SourceTime>2022-01-04T21:29:14.7294721+01:00</SourceTime>
-  <DestFile>C:/Users/Kubus/Desktop/JPWP_projekt/easy2code_game/Content/bin/DesktopGL/Content/rect32.xnb</DestFile>
-  <DestTime>2022-01-11T18:28:43.8199437+01:00</DestTime>
+  <SourceFile>C:/Users/jzasa/OneDrive/Pulpit/easy2_code/easy2code_game/Content/rect32.png</SourceFile>
+  <SourceTime>2022-01-13T11:13:18.520534+01:00</SourceTime>
+  <DestFile>C:/Users/jzasa/OneDrive/Pulpit/easy2_code/easy2code_game/Content/bin/DesktopGL/Content/rect32.xnb</DestFile>
+  <DestTime>2022-01-13T11:13:45.7163925+01:00</DestTime>
   <Importer>TextureImporter</Importer>
-  <ImporterTime>2020-08-10T16:17:54+02:00</ImporterTime>
+  <ImporterTime>2020-08-10T18:17:54+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
-  <ProcessorTime>2020-08-10T16:17:54+02:00</ProcessorTime>
+  <ProcessorTime>2020-08-10T18:17:54+02:00</ProcessorTime>
   <Parameters>
     <Key>ColorKeyColor</Key>
     <Value>255,0,255,255</Value>
