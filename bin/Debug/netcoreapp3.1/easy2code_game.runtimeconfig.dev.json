@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\jzasa\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\jzasa\\.nuget\\packages"
+      "C:\\Users\\Kubus\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Kubus\\.nuget\\packages"
     ]
   }
 }

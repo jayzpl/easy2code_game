@@ -1,5 +1,13 @@
 # easy2code_game
 
+# How to run ?
+- you need .net core in your pc
+- make sure you have monogame engine in your .net 
+    - to install monogame use "dotnet new --install MonoGame.Templates.CSharp"
+    - and also: "dotnet tool install --global dotnet-mgcb-editor"
+    - and also: "mgcb-editor --register"
+- to run the game you need to be in game directory and then type "dotnet run"
+
 # history of commits
 - first commit
 - 0.0.1 implementation of MonoGame engine.
@@ -12,7 +20,9 @@
 - 0.1.1 implementation of better level design, added new mechanic for moving blocks.
 - 0.1.2 implementation of new "info and hints" mechanic. Added main game mechanic: ordering blocks and checking result
 - 0.1.3 added displaing points and 'win/fail' message
-- 0.1.4 added new game levels
+- 0.1.4 added new game levels and instruction to run game in readme.md
+
+- 1.0.0 game has been pushed.
 
 
 # TODO:
@@ -22,6 +32,5 @@
 
 
 # INPROGRES:
-- add instruction in readme how to run game (required)
 
-# TOTAL PROGRES: 99%
+# TOTAL PROGRES: 100%

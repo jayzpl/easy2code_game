@@ -174,19 +174,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jzasa\\.nuget\\packages\\": {}
+    "C:\\Users\\Kubus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jzasa\\OneDrive\\Pulpit\\easy2_code\\easy2code_game\\easy2code_game.csproj",
+      "projectUniqueName": "C:\\Users\\Kubus\\Desktop\\JPWP_projekt\\easy2code_game\\easy2code_game.csproj",
       "projectName": "easy2code_game",
-      "projectPath": "C:\\Users\\jzasa\\OneDrive\\Pulpit\\easy2_code\\easy2code_game\\easy2code_game.csproj",
-      "packagesPath": "C:\\Users\\jzasa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jzasa\\OneDrive\\Pulpit\\easy2_code\\easy2code_game\\obj\\",
+      "projectPath": "C:\\Users\\Kubus\\Desktop\\JPWP_projekt\\easy2code_game\\easy2code_game.csproj",
+      "packagesPath": "C:\\Users\\Kubus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kubus\\Desktop\\JPWP_projekt\\easy2code_game\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jzasa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kubus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -198,7 +198,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -210,7 +209,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "MonoGame.Content.Builder.Task": {
             "target": "Package",
@@ -236,7 +234,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.414\\RuntimeIdentifierGraph.json"
       }
     }
   }
